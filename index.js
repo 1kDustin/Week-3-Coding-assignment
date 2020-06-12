@@ -163,3 +163,27 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
 console.log(willBuyDrink(isHotOutside, moneyInPocket));
 
 //13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+// make an array change into an object
+let arrObject = ['Dustin', 'SChomburg', 25, 'Male', 'Software Developer', 'Available'];
+
+let exampleReturn = {
+    1: 'Dustin',
+    2: 'Schomburg', 
+    3: 25, 
+    4: 'Male', 
+    5: 'Software Developer',
+    6: 'Available'
+}
+function arrayToObject(argArray) {
+    var returnObject = {};
+    for(let i = 0; i <= argArray.length - 1; i++) {
+        returnObject[i] = argArray[i]
+    }
+    return returnObject;
+}
+console.log(arrayToObject(arrObject));
+
+
+// What the function does
+// I looped through an array to build an object.
+// I thought this would be a good example of data transformation tactics. 
